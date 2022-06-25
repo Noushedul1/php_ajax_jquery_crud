@@ -11,34 +11,59 @@
     <title>index</title>
   </head>
   <body>
+    <!-- start for modal  -->
+    <!-- Button trigger modal -->
+<!-- Modal -->
       <div class="container">
-              <div class="mb-3">
-                  <label for="" class="form-label">Name </label>
-                  <input type="text" id="fname" class="form-control" placeholder="Enter name ">
+        <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Insert data
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="mb-3">
-                  <label for="" class="form-label">Enter age </label>
-                  <input type="text" id="age" class="form-control" placeholder="Enter age ">
+              <div class="modal-body">
+              <div class="container">
+                <div class="mb-3">
+                    <label for="" class="form-label">Name </label>
+                    <input type="text" id="fname" class="form-control" placeholder="Enter name ">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Enter age </label>
+                    <input type="text" id="age" class="form-control" placeholder="Enter age ">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">City </label>
+                    <input type="text" id="city" class="form-control" placeholder="Enter city ">
+                </div>
+                  <button id="btn" class="btn btn-primary w-100">Submit</button>
               </div>
-              <div class="mb-3">
-                  <label for="" class="form-label">City </label>
-                  <input type="text" id="city" class="form-control" placeholder="Enter city ">
               </div>
-              <button id="btn" class="btn btn-primary">insert value</button>
-              <button class="btn btn-secondary" id="read">Read Data</button>
-
-                <table class="table">
-                    <tHead>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>age</th>
-                        <th>City</th>
-                        <th>Action</th>
-                    </tHead>
-                    <tBody id="tBody">
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end for modal  -->
+      <div class="container">
+        <button class="btn btn-secondary" id="read">Read Data</button>
+        <table class="table">
+          <tHead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>age</th>
+            <th>City</th>
+            <th>Action</th>
+          </tHead>
+          <tBody id="tBody">
                         
-                    </tBody>
-                </table>
+          </tBody>
+        </table>
       </div>
     
 
