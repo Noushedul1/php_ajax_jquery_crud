@@ -5,8 +5,9 @@ $read = "SELECT * FROM studentdetails";
 
 $exu = mysqli_query($connect,$read);
 ?>
-<?php while($row = mysqli_fetch_array($exu)) { ?>
-    <?php $i = 1; ?>
+<?php 
+$i = 1;
+while($row = mysqli_fetch_array($exu)) { ?> 
     <tr>
         <td><?php echo $i++; ?></td>
         <td><?php echo $row['sname']; ?></td>
